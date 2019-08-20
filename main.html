@@ -1,0 +1,938 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Main &mdash; HoneyBot 5.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Plugins" href="plugins.html" />
+    <link rel="prev" title="Welcome to HoneyBot’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/honeybot_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Main</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bot-core">Bot_core</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#command-string-output">Command String Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#message-validation">Message Validation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#message-util">Message util</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bot-util">Bot util</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setup-requirements">Setup requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#message-parsing">Message parsing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bot-irc-functions">Bot IRC Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ongoing-requirement-s">Ongoing requirement/s</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to.html">How Tos</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HoneyBot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Main</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/pyhoneybot/honeybot/blob/master/docs/source/main.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-main">
+<span id="main"></span><h1>Main<a class="headerlink" href="#module-main" title="Permalink to this headline">¶</a></h1>
+<p>Example Google style docstrings.</p>
+<p>This module demonstrates documentation as specified by the <a class="reference external" href="http://google.github.io/styleguide/pyguide.html">Google Python
+Style Guide</a>. Docstrings may extend over multiple lines. Sections are created
+with a section header and a colon followed by a block of indented text.</p>
+<p class="rubric">Example</p>
+<p>Examples can be given using either the <code class="docutils literal notranslate"><span class="pre">Example</span></code> or <code class="docutils literal notranslate"><span class="pre">Examples</span></code>
+sections. Sections support any reStructuredText formatting, including
+literal blocks:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python example_google.py
+</pre></div>
+</div>
+<p>Section breaks are created by resuming unindented text. Section breaks
+are also implicitly created anytime a new section starts.</p>
+<dl class="attribute">
+<dt id="main.connect_config">
+<code class="sig-name descname">connect_config</code><a class="headerlink" href="#main.connect_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Module level variables may be documented in
+either the <code class="docutils literal notranslate"><span class="pre">Attributes</span></code> section of the module docstring, or in an
+inline docstring immediately following the variable.</p>
+<p>Either form is acceptable, but the two should not be mixed. Choose
+one convention to document module level variables and be consistent
+with it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>ConfigParser</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.memory_reader">
+<code class="sig-name descname">memory_reader</code><a class="headerlink" href="#main.memory_reader" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>ConfigParser</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.pluggins">
+<code class="sig-name descname">pluggins</code><a class="headerlink" href="#main.pluggins" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>List</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.logger">
+<code class="sig-name descname">logger</code><a class="headerlink" href="#main.logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="section" id="bot-core">
+<h2>Bot_core<a class="headerlink" href="#bot-core" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="main.Bot_core">
+<em class="property">class </em><code class="sig-name descname">Bot_core</code><span class="sig-paren">(</span><em class="sig-param">password=''</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core" title="Permalink to this definition">¶</a></dt>
+<dd><p>Core of the bot.</p>
+<p>Detailed Description.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>password</strong> (<em>str</em>) – Password for the bot, defaults to ‘’</p>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="main.Bot_core.server_url">
+<code class="sig-name descname">server_url</code><a class="headerlink" href="#main.Bot_core.server_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>String for the IRC Server.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.port">
+<code class="sig-name descname">port</code><a class="headerlink" href="#main.Bot_core.port" title="Permalink to this definition">¶</a></dt>
+<dd><p>Port for the IRC Server.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.name">
+<code class="sig-name descname">name</code><a class="headerlink" href="#main.Bot_core.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the bot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.owners">
+<code class="sig-name descname">owners</code><a class="headerlink" href="#main.Bot_core.owners" title="Permalink to this definition">¶</a></dt>
+<dd><p>String list of owners.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.password">
+<code class="sig-name descname">password</code><a class="headerlink" href="#main.Bot_core.password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Password of the bot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.friends">
+<code class="sig-name descname">friends</code><a class="headerlink" href="#main.Bot_core.friends" title="Permalink to this definition">¶</a></dt>
+<dd><p>String list of friends.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.autojoin_channels">
+<code class="sig-name descname">autojoin_channels</code><a class="headerlink" href="#main.Bot_core.autojoin_channels" title="Permalink to this definition">¶</a></dt>
+<dd><p>String list of autojoin_channels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.required_modules">
+<code class="sig-name descname">required_modules</code><a class="headerlink" href="#main.Bot_core.required_modules" title="Permalink to this definition">¶</a></dt>
+<dd><p>String list of required modules.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.time">
+<code class="sig-name descname">time</code><a class="headerlink" href="#main.Bot_core.time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the current time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.irc">
+<code class="sig-name descname">irc</code><a class="headerlink" href="#main.Bot_core.irc" title="Permalink to this definition">¶</a></dt>
+<dd><p>socket for the IRC server.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>socket</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.isListenOn">
+<code class="sig-name descname">isListenOn</code><a class="headerlink" href="#main.Bot_core.isListenOn" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.domain">
+<code class="sig-name descname">domain</code><a class="headerlink" href="#main.Bot_core.domain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Server domain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.sp_command">
+<code class="sig-name descname">sp_command</code><a class="headerlink" href="#main.Bot_core.sp_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>command string of the bot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="main.Bot_core.plugins">
+<code class="sig-name descname">plugins</code><a class="headerlink" href="#main.Bot_core.plugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of plugins.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>lsit of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="command-string-output">
+<h3>Command String Output<a class="headerlink" href="#command-string-output" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>The section inhabits the functions of the Bot_core class which are responsible
+for generating the command string and returning it to the function that actually
+executes the command.</p>
+<dl class="method">
+<dt id="main.Bot_core.set_nick_command">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">set_nick_command</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.set_nick_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get string for set nickname command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>String for the set nick command.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<dl class="simple">
+<dt>bot_core = Bot_core()</dt><dd><p>bot_core.set_nick_command()</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.present_command">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">present_command</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.present_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get string for present command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>String for the present command.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<dl class="simple">
+<dt>bot_core = Bot_core()</dt><dd><p>bot_core.present_command()</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.identify_command">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">identify_command</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.identify_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get string for identify command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Command for the identify command.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<dl class="simple">
+<dt>bot_core = Bot_core()</dt><dd><p>bot_core.identify_command()</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.join_channel_command">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">join_channel_command</code><span class="sig-paren">(</span><em class="sig-param">channel</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.join_channel_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get string for join channel command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>channel</strong> (<em>str</em>) – String of the channelname command.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Command to join Channel.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>channel_name_command = ‘&lt;command_name&gt;’</p>
+<blockquote>
+<div><dl class="simple">
+<dt>bot_core = Bot_core()</dt><dd><p>bot_core.join_channel_command(channel_name_command)</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.specific_send_command">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">specific_send_command</code><span class="sig-paren">(</span><em class="sig-param">target</em>, <em class="sig-param">msg</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.specific_send_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get string for specific send command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target</strong> (<em>str</em>) – String of the target that should receive the message.</p></li>
+<li><p><strong>msg</strong> (<em>str</em>) – String of the Message that’s to be sent to target.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Command for messaging specific user.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<dl class="simple">
+<dt>target_name = ‘&lt;target_name&gt;’</dt><dd><p>str msg = ‘I am a test message’</p>
+</dd>
+<dt>bot_core = Bot_core()</dt><dd><p>bot_core.specific_send_command(target_name, msg)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.pong_return">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">pong_return</code><span class="sig-paren">(</span><em class="sig-param">domain</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.pong_return" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get string for Pong command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>domain</strong> (<em>str</em>) – String of the current domain.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Command for Pong.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<dl class="simple">
+<dt>domain_name = ‘&lt;current user domain&gt;’</dt><dd><p>bot_core = Bot_core()
+bot_core.pong_return(domain_name)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="message-validation">
+<h3>Message Validation<a class="headerlink" href="#message-validation" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Description of message validation section</p>
+<dl class="method">
+<dt id="main.Bot_core.message_info">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">message_info</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.message_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get info of a message.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>s</strong> (<em>str</em>) – Incoming message information</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>str}: interprets the incoming message and splits the message to get the following information out of the message viz ‘prefix’, ‘command’, ‘args’, ‘address’, ‘user’. Then returns the information as a dictionary containing following information:</dt><dd><dl class="simple">
+<dt>{</dt><dd><p>‘prefix’: &lt;prefix_string_value&gt;                         ‘command’: &lt;command_string_value&gt;                               ‘args’: &lt;array_of_argument_strings&gt;                             ‘address’: &lt;target address to which the message was sent&gt;                               ‘user’:&lt;user name who sent the message&gt;                 }</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict of {str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<dl class="simple">
+<dt>message = ‘&lt;incoming message&gt;’</dt><dd><p>bot_core = Bot_core()
+bot_core.message_info(message)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="main.Bot_core.bot_info">
+<code class="sig-name descname">bot_info</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.bot_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get bot info.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>str}: TODO.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict of {str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<dl class="simple">
+<dt>bot_core = Bot_core()</dt><dd><p>bot_core.bot_info(message)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="message-util">
+<h3>Message util<a class="headerlink" href="#message-util" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Message util Description</p>
+<dl class="method">
+<dt id="main.Bot_core.send">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">send</code><span class="sig-paren">(</span><em class="sig-param">msg</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.send" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send a message.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>msg</strong> (<em>str</em>) – The message that’s to be sent.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.send_target">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">send_target</code><span class="sig-paren">(</span><em class="sig-param">target</em>, <em class="sig-param">msg</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.send_target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send a specific message to target.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target</strong> (<em>str</em>) – The target that’s to be messaged.</p></li>
+<li><p><strong>msg</strong> (<em>str</em>) – The message that’s to be sent.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.join">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">join</code><span class="sig-paren">(</span><em class="sig-param">channel</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.join" title="Permalink to this definition">¶</a></dt>
+<dd><p>Join a specific channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>channel</strong> (<em>str</em>) – The channel the bot should join.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="bot-util">
+<h3>Bot util<a class="headerlink" href="#bot-util" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Bot util Description</p>
+<dl class="method">
+<dt id="main.Bot_core.load_plugins">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">load_plugins</code><span class="sig-paren">(</span><em class="sig-param">plugins_to_load</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.load_plugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load plugins that are specified in the plugins list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>plugins_to_load</strong> (<em>list of str</em>) – List of plugins to load.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.configfile_to_list">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">configfile_to_list</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.configfile_to_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn specified configfile to a list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filenamae</strong> (<em>str</em>) – Name of the file that should be converted.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Elements of the configfile as strings.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>elements (list of str)</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.methods">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">methods</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.methods" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return methods of the bot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>str}: Dictionary of command names and strings.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict of {str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.run_plugins">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">run_plugins</code><span class="sig-paren">(</span><em class="sig-param">listfrom</em>, <em class="sig-param">incoming</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.run_plugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the plugins.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>listfrom</strong> (<em>TODO</em>) – TODO</p></li>
+<li><p><strong>incoming</strong> (<em>TODO</em>) – TODO</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="setup-requirements">
+<h3>Setup requirements<a class="headerlink" href="#setup-requirements" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Setup requirements Description</p>
+<dl class="method">
+<dt id="main.Bot_core.requirements">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">requirements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return requirements of the bot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>List of the requirements.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>reqs (list of str)</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.memory_add_value">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">memory_add_value</code><span class="sig-paren">(</span><em class="sig-param">memfile</em>, <em class="sig-param">section</em>, <em class="sig-param">key</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.memory_add_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>add value into memory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>memfile</strong> (<em>TODO</em>) – TODO</p></li>
+<li><p><strong>section</strong> (<em>TODO</em>) – TODO</p></li>
+<li><p><strong>key</strong> (<em>TODO</em>) – TODO</p></li>
+<li><p><strong>value</strong> (<em>TODO</em>) – TODO</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.memory_remove_value">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">memory_remove_value</code><span class="sig-paren">(</span><em class="sig-param">memfile</em>, <em class="sig-param">section</em>, <em class="sig-param">key</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.memory_remove_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>remove value from memory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>memfile</strong> (<em>TODO</em>) – TODO</p></li>
+<li><p><strong>section</strong> (<em>TODO</em>) – TODO</p></li>
+<li><p><strong>key</strong> (<em>TODO</em>) – TODO</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.memory_fetch_value">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">memory_fetch_value</code><span class="sig-paren">(</span><em class="sig-param">memfile</em>, <em class="sig-param">section</em>, <em class="sig-param">key</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.memory_fetch_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>fetches value from memory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>memfile</strong> (<em>TODO</em>) – TODO</p></li>
+<li><p><strong>section</strong> (<em>TODO</em>) – TODO</p></li>
+<li><p><strong>key</strong> (<em>TODO</em>) – TODO</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Value of the key as a string.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(str)</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="message-parsing">
+<h3>Message parsing<a class="headerlink" href="#message-parsing" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Message parsing Description</p>
+<dl class="method">
+<dt id="main.Bot_core.core_commands_parse">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">core_commands_parse</code><span class="sig-paren">(</span><em class="sig-param">incoming</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.core_commands_parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>parse core commands.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>incoming</strong> (<em>TODO</em>) – TODO</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="bot-irc-functions">
+<h3>Bot IRC Functions<a class="headerlink" href="#bot-irc-functions" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Bot IRC Functions Description</p>
+<dl class="method">
+<dt id="main.Bot_core.connect">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">connect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connect to the IRC</p>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.identify">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">identify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.identify" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identifies command.</p>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.greet">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">greet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.greet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Greet the channel ? (TODO).</p>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.pull">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">pull</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.pull" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO</p>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="ongoing-requirement-s">
+<h3>Ongoing requirement/s<a class="headerlink" href="#ongoing-requirement-s" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Ongoing requirement/s Description</p>
+<dl class="method">
+<dt id="main.Bot_core.stay_alive">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">stay_alive</code><span class="sig-paren">(</span><em class="sig-param">incoming</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.stay_alive" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>incoming</strong> (<em>TODO</em>) – TODO</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.registered_run">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">registered_run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.registered_run" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO</p>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.unregistered_run">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">unregistered_run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.unregistered_run" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO</p>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="plugins.html" class="btn btn-neutral float-right" title="Plugins" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to HoneyBot’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Abdur-rahmaanJ
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
